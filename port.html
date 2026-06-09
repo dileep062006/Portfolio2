@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attla Dileep | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#111827;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.3);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#e2e8f0;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 10%;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:20px;
+    color:#94a3b8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:8px;
+    margin:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
+
+/* Sections */
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+    color:#38bdf8;
+}
+
+/* About */
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:14px 25px;
+    border-radius:10px;
+    border:1px solid #334155;
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    border:1px solid #334155;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.project-content p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.project-content a{
+    text-decoration:none;
+    color:#38bdf8;
+    font-weight:600;
+}
+
+/* Contact */
+.contact-box{
+    background:#1e293b;
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #334155;
+}
+
+.contact-box h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    nav ul{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Dileep</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Attla Dileep</span></h1>
+
+        <p>
+            * Web Developer passionate about creating
+            modern applications and responsive websites...!!!
+        </p>
+
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            I am a Computer Science student with skills in Java,
+            HTML, CSS and JavaScript. I enjoy building practical
+            software solutions and modern web applications.
+            My goal is to become a professional software developer
+            and continuously learn new technologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+     <div class="skill">Java</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Problem Solving</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Student Management System</h3>
+                <p>Manage student information and records efficiently.</p>
+                <a href="https://attladileep-ship-it.github.io/Student-management-system/" target="_blank">
+                    View Project →
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Chat Application</h3>
+                <p>Interactive chat application with a clean interface.</p>
+                <a href="https://attladileep-ship-it.github.io/Chat-App-/" target="_blank">
+                    View Project →
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Attendance System</h3>
+                <p>Attendance tracking and management application.</p>
+                <a href="https://attladileep-ship-it.github.io/Attendance-System/?attendance=on" target="_blank">
+                    View Project →
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Fish Market Website</h3>
+                <p>Responsive website developed for a fish market business.</p>
+                <a href="https://attladileep-ship-it.github.io/Fish-Market-Website/" target="_blank">
+                    View Project →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-box">
+        <h3>Let's Connect</h3>
+        <p>Email: attladileep@gmail.com</p>
+        <p>GitHub: github.com/attladileep-ship-it</p>
+        <p>Andhra Pradesh, India</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Attla Dileep • Portfolio Website
+</footer>
+
+</body>
+</html>
